@@ -28,6 +28,6 @@ pickle.dump(classifier, open('model.pkl','wb'))
 
 #load the model and test with a custom input
 model = pickle.load( open('model.pkl','rb'))
-x = [[6.7, 3.3, 5.7, 2.1]]
+x = [[5.1,3.3,1.7,0.5]]
 predict = model.predict(x)
 print(labels[predict[0]])
